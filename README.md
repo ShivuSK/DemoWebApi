@@ -12,11 +12,11 @@ https://github.com/ShivuSK/DemoWebApi
  
 2)      Open the Command Prompt and navigate the folder where project file is located
 3)      Run the below command to build and execute the solution
-•	Command to build the solution
-o	Dotnet build
-•	Command to run the solution
-o	Dotnet run watch
-       4) On successful build and run, open the browser and type the below URL
+	•	Command to build the solution
+	o	Dotnet build
+	•	Command to run the solution
+	o	Dotnet run watch
+ 4) On successful build and run, open the browser and type the below URL
            http://localhost:5000/api/GetPetsOwners
            Expected json output is 
 {"Cats":
@@ -29,4 +29,17 @@ o	Dotnet run watch
 	 ]
 }
 
-      
+5)  Run the html file (GetPetOwners.html) which is available in the solution folder
+    This HTML file consume the web API and display the results
+   The expected output is
+    Male
+•	Garfield
+•	Jim
+•	Max
+•	Tom
+
+Female
+•	Garfield
+•	Simba
+•	Tabby
+     

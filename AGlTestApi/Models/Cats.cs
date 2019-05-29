@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace AGLTest.Models
 {
-    public class Result
+    public class Cats
     {
-        public  List<Cats> Cats { get; set; }
+        public string Gender { get; set; }
+        public List<string> Names { get; set; }
     }
 }

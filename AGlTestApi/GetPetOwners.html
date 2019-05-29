@@ -5,8 +5,7 @@
     <meta charset="utf-8" />
     <title></title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js" type="text/javascript"></script>
-    <script type="text/javascript">
-       
+    <script type="text/javascript">       
         $(document).ready(function () {
             
             var ulId = $('#ulId');
@@ -17,21 +16,14 @@
                     dataType: 'json',
                     success: function (data) {
                         ulId.empty();
-                        $.each(data.catTypeOwners, function (index, val) {
-                            var gender = val.gender;
-                           
-                            ulId.append(gender);
-                            
-                            $.each(val.owners, function (index, oval) {
-                                
-                                ulId.append('<li>' + oval + '</li>');
-                                
-                              
+                        $.each(data.cats, function (index, val) {
+                            var gender = val.gender;                           
+                            ulId.append(gender);                            
+                            $.each(val.names, function (index, oval) {                                
+                                ulId.append('<li>' + oval + '</li>'); 
                             });
                              ulId.append('<br>')
                         });
-
-                        // alert(data);
                     }
                 })
 
@@ -43,7 +35,5 @@
 <body>
     <input id="btn" type="button" value="GetPetOwners" />
     <ul id="ulId"></ul>
-         
-    
 </body>
 </html>

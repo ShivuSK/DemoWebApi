@@ -6,7 +6,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace AGLTestApi.Services
 {
@@ -20,7 +19,6 @@ namespace AGLTestApi.Services
         public Result GetPetsOwner(IConfiguration configuration)
         {
             Result result = new Result();
-
             //initiate the httpclient 
             using (var client = new HttpClient())
             {
@@ -59,12 +57,12 @@ namespace AGLTestApi.Services
                                 string gender = deserilizedResult.Gender;
 
                                 //filter the JSON response by the pet type "Cat" and select the Pet owner name
-                                var petsOwner = deserilizedResult.Pets.Where(x => x.Type == "Cat").Select(n => n.Name).ToList();
+                                var petsOwner = deserilizedResult.Pets.Where(x => x.Type == Convert.ToString(EnumProperties.PetsType.Cat)).Select(n => n.Name).ToList();
 
                                 //Collecct the male and female owners in a separate list
                                 foreach (var ownerName in petsOwner)
                                 {
-                                    if (string.Equals(gender, "Male"))
+                                    if (string.Equals(gender, Convert.ToString(EnumProperties.OwnerGenderType.Male)))
                                         listMaleOwners.Add(ownerName);
                                     else
                                         listFemaleOwners.Add(ownerName);
@@ -74,34 +72,30 @@ namespace AGLTestApi.Services
                             //sort the male and female owners list in assending order
                             listMaleOwners.Sort();
                             listFemaleOwners.Sort();
-
-                            List<CatOwners> listCatOwners = new List<CatOwners>()
+                            List<Cats> listCatOwners = new List<Cats>()
                              {
-                                    new CatOwners
+                                    new Cats
                                     {
-                                        Gender = "Male",
-                                        Owners = listMaleOwners
+                                        Gender = Convert.ToString(EnumProperties.OwnerGenderType.Male),
+                                        Names = listMaleOwners
                                     },
-                                    new CatOwners
+                                    new Cats
                                     {
-                                        Gender = "Female",
-                                        Owners = listFemaleOwners
+                                        Gender = Convert.ToString(EnumProperties.OwnerGenderType.Female),
+                                        Names = listFemaleOwners
                                     }
                              };
-
-                            result.CatTypeOwners = listCatOwners;
+                            result.Cats = listCatOwners;
                         }
                         else
                             return null;
                     }
-
                 }
                 catch (Exception ex)
                 {
                     throw new Exception(ex.Message);
                 }
             }
-
             return result;
         }
     }

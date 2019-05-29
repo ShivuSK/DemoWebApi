@@ -8,7 +8,6 @@ namespace AGlTestApi
 {
     public class Startup
     {
-
         /// <summary>
         /// // This method gets called by the runtime. Use this method to add services to the container.
         /// </summary>
@@ -17,10 +16,8 @@ namespace AGlTestApi
         {
             //Dependency Injection
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddSingleton<IPetsServices, PetsServices>();
-            
+            services.AddSingleton<IPetsServices, PetsServices>();            
         }
-
 
         /// <summary>
         /// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -33,7 +30,6 @@ namespace AGlTestApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseMvc();
         }
     }

@@ -1,0 +1,14 @@
+F:\code\AGLTest.Code\AGlTestApi\obj\Debug\netcoreapp2.2\AGLTestApi.csproj.CoreCompileInputs.cache
+F:\code\AGLTest.Code\AGlTestApi\obj\Debug\netcoreapp2.2\AGLTestApi.RazorAssemblyInfo.cache
+F:\code\AGLTest.Code\AGlTestApi\obj\Debug\netcoreapp2.2\AGLTestApi.RazorAssemblyInfo.cs
+F:\code\AGLTest.Code\AGlTestApi\obj\Debug\netcoreapp2.2\AGLTestApi.AssemblyInfoInputs.cache
+F:\code\AGLTest.Code\AGlTestApi\obj\Debug\netcoreapp2.2\AGLTestApi.AssemblyInfo.cs
+F:\code\AGLTest.Code\AGlTestApi\bin\Debug\netcoreapp2.2\AGLTestApi.deps.json
+F:\code\AGLTest.Code\AGlTestApi\bin\Debug\netcoreapp2.2\AGLTestApi.runtimeconfig.json
+F:\code\AGLTest.Code\AGlTestApi\bin\Debug\netcoreapp2.2\AGLTestApi.runtimeconfig.dev.json
+F:\code\AGLTest.Code\AGlTestApi\bin\Debug\netcoreapp2.2\AGLTestApi.dll
+F:\code\AGLTest.Code\AGlTestApi\bin\Debug\netcoreapp2.2\AGLTestApi.pdb
+F:\code\AGLTest.Code\AGlTestApi\obj\Debug\netcoreapp2.2\AGLTestApi.RazorTargetAssemblyInfo.cache
+F:\code\AGLTest.Code\AGlTestApi\obj\Debug\netcoreapp2.2\AGLTestApi.dll
+F:\code\AGLTest.Code\AGlTestApi\obj\Debug\netcoreapp2.2\AGLTestApi.pdb
+F:\code\AGLTest.Code\AGlTestApi\obj\Debug\netcoreapp2.2\AGLTestApi.csprojAssemblyReference.cache

@@ -1,11 +1,11 @@
-Introduction
+# Introduction
  
 This Repository contains the sample code to fetch the JSON data in ASP .Net core web API and expose the endpoint API to consume in different framework.
  
-Prerequisites
+# Prerequisites
 .Net Core 2.2 SDK 2.2
  
-Steps to run the code
+# Steps to run the code
  
 1)      Download the code form the GitHub
 https://github.com/ShivuSK/DemoWebApi
@@ -29,6 +29,7 @@ https://github.com/ShivuSK/DemoWebApi
 	 ]
 }
 
+# View the output in webpage
 5)  Run the html file (GetPetOwners.html) which is available in the solution folder
     This HTML file consume the web API and display the results
    The expected output is

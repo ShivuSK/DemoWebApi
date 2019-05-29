@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\code\\AGLTest.Code\\AGlTestApi\\AGLTestApi.csproj": {}
+    "F:\\code\\GitShare\\DemoWebApi\\AGlTestApi\\AGLTestApi.csproj": {}
   },
   "projects": {
-    "F:\\code\\AGLTest.Code\\AGlTestApi\\AGLTestApi.csproj": {
+    "F:\\code\\GitShare\\DemoWebApi\\AGlTestApi\\AGLTestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\code\\AGLTest.Code\\AGlTestApi\\AGLTestApi.csproj",
+        "projectUniqueName": "F:\\code\\GitShare\\DemoWebApi\\AGlTestApi\\AGLTestApi.csproj",
         "projectName": "AGLTestApi",
-        "projectPath": "F:\\code\\AGLTest.Code\\AGlTestApi\\AGLTestApi.csproj",
+        "projectPath": "F:\\code\\GitShare\\DemoWebApi\\AGlTestApi\\AGLTestApi.csproj",
         "packagesPath": "C:\\Users\\Shivu\\.nuget\\packages\\",
-        "outputPath": "F:\\code\\AGLTest.Code\\AGlTestApi\\obj\\",
+        "outputPath": "F:\\code\\GitShare\\DemoWebApi\\AGlTestApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
